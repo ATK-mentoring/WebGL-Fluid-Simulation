@@ -76,12 +76,12 @@ let config = {
     BLOOM: true,
     BLOOM_ITERATIONS: 8,
     BLOOM_RESOLUTION: 256,
-    BLOOM_INTENSITY: 0.8,
-    BLOOM_THRESHOLD: 0.6,
+    BLOOM_INTENSITY: 0.47,
+    BLOOM_THRESHOLD: 0.8,
     BLOOM_SOFT_KNEE: 0.7,
     SUNRAYS: true,
     SUNRAYS_RESOLUTION: 196,
-    SUNRAYS_WEIGHT: 1.0,
+    SUNRAYS_WEIGHT: 0.4,
 }
 
 function pointerPrototype () {
@@ -109,8 +109,8 @@ if (isMobile()) {
 if (!ext.supportLinearFiltering) {
     config.DYE_RESOLUTION = 512;
     config.SHADING = false;
-    config.BLOOM = false;
-    config.SUNRAYS = false;
+    config.BLOOM = true;
+    config.SUNRAYS = true;
 }
 
 startGUI();
