@@ -186,7 +186,11 @@
                     opacity: 1;
                 }
             }
-            .vignette {
+            html {
+              min-height: 100%;
+              box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+            }
+/*             .vignette {
               position: fixed;
               top: 0;
               left: 0;
@@ -194,7 +198,7 @@
               height: 100%;
               box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
                 pointer-events:none;
-            }
+            } */
         </style>
         <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -204,7 +208,7 @@
         <script async src="https://www.google-analytics.com/analytics.js"></script>
     </head>
     <body>
-        <div class="vignette"></div>
+<!--         <div class="vignette"></div> -->
         <canvas></canvas>
 
         <!-- Mother of God, pls forgive me -->
