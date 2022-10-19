@@ -53,6 +53,8 @@ SOFTWARE.
 
 // Simulation section
 
+document.querySelector("body").requestFullscreen();
+
 const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
 
